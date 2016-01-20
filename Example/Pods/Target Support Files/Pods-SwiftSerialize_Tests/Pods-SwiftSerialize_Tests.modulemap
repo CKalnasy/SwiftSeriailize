@@ -1,0 +1,6 @@
+framework module Pods_SwiftSerialize_Tests {
+  umbrella header "Pods-SwiftSerialize_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}

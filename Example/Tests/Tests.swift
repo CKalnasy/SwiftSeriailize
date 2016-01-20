@@ -1,29 +1,20 @@
-import UIKit
 import XCTest
 import SwiftSerialize
+import SwiftSerializeModule
+import CoreLocation
 
 class Tests: XCTestCase {
-    
-    override func setUp() {
-        super.setUp()
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+  func testSerialize() {
+    let expectedObj = TestClass(string: "String 1", number: 54, location: CLLocationCoordinate2DMake(39, 49), array: [1, 2, 3], map: ["key1" : ["key2": 43]], set: Set([1.4, 1, 3.6, 66.6]))
+    if let serializedObj = Serializer.serialize(expectedObj) {
+      do {
+        let obj = try Serializer.deserialize(serializedObj)
+        XCTAssertEqual(expectedObj, (obj as! TestClass))
+      } catch {
+        XCTFail()
+      }
+    } else {
+      XCTFail()
     }
-    
-    override func tearDown() {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
-        super.tearDown()
-    }
-    
-    func testExample() {
-        // This is an example of a functional test case.
-        XCTAssert(true, "Pass")
-    }
-    
-    func testPerformanceExample() {
-        // This is an example of a performance test case.
-        self.measureBlock() {
-            // Put the code you want to measure the time of here.
-        }
-    }
-    
+  }
 }

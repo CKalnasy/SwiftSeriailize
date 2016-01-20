@@ -1,0 +1,6 @@
+framework module SwiftSerialize {
+  umbrella header "SwiftSerialize-umbrella.h"
+
+  export *
+  module * { export * }
+}

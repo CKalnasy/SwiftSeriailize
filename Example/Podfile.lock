@@ -1,0 +1,17 @@
+PODS:
+  - swift-serialize (1.0.0)
+  - SwiftSerialize (0.1.0):
+    - swift-serialize (~> 1.0)
+
+DEPENDENCIES:
+  - SwiftSerialize (from `../`)
+
+EXTERNAL SOURCES:
+  SwiftSerialize:
+    :path: ../
+
+SPEC CHECKSUMS:
+  swift-serialize: 6cc6ba441da336a218e5d5a85a81a58a877402de
+  SwiftSerialize: 3e05ef845abda9b9b9fa2cb3aeb2069df4577536
+
+COCOAPODS: 0.39.0

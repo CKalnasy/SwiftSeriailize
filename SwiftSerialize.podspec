@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
   s.name             = "SwiftSerialize"
   s.version          = "0.1.0"
-  s.summary          = "A short description of SwiftSerialize."
+  s.summary          = "Library to serialize and deserialze Swift objects."
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -17,24 +17,23 @@ Pod::Spec.new do |s|
 #   * Write the description between the DESC delimiters below.
 #   * Finally, don't worry about the indent, CocoaPods strips it!  
   s.description      = <<-DESC
+Serialize Swift objects to JSON and unserialize them to custom classes.
                        DESC
 
-  s.homepage         = "https://github.com/<GITHUB_USERNAME>/SwiftSerialize"
+  s.homepage         = "https://github.com/ckalnasy/SwiftSerialize"
   # s.screenshots     = "www.example.com/screenshots_1", "www.example.com/screenshots_2"
   s.license          = 'MIT'
   s.author           = { "CKalnasy" => "kalnasy.6@osu.edu" }
-  s.source           = { :git => "https://github.com/<GITHUB_USERNAME>/SwiftSerialize.git", :tag => s.version.to_s }
+  s.source           = { :git => "https://github.com/ckalnasy/SwiftSerialize.git", :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.platform     = :ios, '8.0'
   s.requires_arc = true
 
-  s.source_files = 'Pod/Classes/**/*'
+  s.source_files = 'SwiftSerialize/*'
   s.resource_bundles = {
     'SwiftSerialize' => ['Pod/Assets/*.png']
   }
 
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+  s.dependency 'swift-serialize', '~> 1.0'
 end
