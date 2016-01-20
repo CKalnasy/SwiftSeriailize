@@ -57,6 +57,10 @@ To run the example project, clone the repo, and run `pod install` from the Examp
 
 You'll also need to uncomment the commented lines in /SwiftSerialize/Initializer.swift to run the test cases.
 
+## Contributing
+
+Will accept all valid pull requests, feature requests, and other issues. Want to help, just ask!
+
 ## License
 
 SwiftSerialize is available under the MIT license. See the LICENSE file for more info.
