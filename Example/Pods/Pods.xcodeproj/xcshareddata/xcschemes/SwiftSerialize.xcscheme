@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '243A6BC8A1BBB1BE03AAB024'
+               BlueprintIdentifier = 'D7024CEF0CD8325C231BC844'
                BlueprintName = 'SwiftSerialize'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'SwiftSerialize.framework'>

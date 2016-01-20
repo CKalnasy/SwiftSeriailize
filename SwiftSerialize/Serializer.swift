@@ -137,18 +137,11 @@ public struct Serializer {
   }
   
   private static func isList(a: Any) -> Bool {
-    if let _ = a as? NSArray {
-      return true
-    }
-    if let _ = a as? NSDictionary {
-      return true
-    }
-    if let _ = a as? [String: Any] {
-      return true
-    }
-    if let _ = a as? NSSet {
-      return true
-    }
+    if let _ = a as? NSArray { return true }
+    if let _ = a as? NSDictionary { return true }
+    if let _ = a as? [String: Any] { return true }
+    if let _ = a as? [String: AnyObject] { return true }
+    if let _ = a as? NSSet { return true }
     return false
   }
   

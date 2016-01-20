@@ -12,6 +12,6 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   swift-serialize: 6cc6ba441da336a218e5d5a85a81a58a877402de
-  SwiftSerialize: 3e05ef845abda9b9b9fa2cb3aeb2069df4577536
+  SwiftSerialize: c691af8e8f0f6252d39d8c630afc32d98ea7c3f2
 
 COCOAPODS: 0.39.0
