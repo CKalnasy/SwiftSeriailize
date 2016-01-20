@@ -2,7 +2,7 @@
 
 import Foundation
 import CoreLocation
-import SwiftSerializeModule
+//import SwiftSerializeModule
 
 enum InitializerError: ErrorType {
   case invalidArg(Int)
@@ -12,20 +12,20 @@ public struct Initializer {
   static func initClass(dict: [String: AnyObject]) throws -> Any? {
     if let type = dict[kClassKey] as? String {
       switch type {
-      case "TestClass":
-        return try initTestClass(dict)
-        
-      case "CLLocationCoordinate2D":
-        return try initCLLocationCoordinate2D(dict)
-        
-      default:
-        break
+        /*case "TestClass":
+          return try initTestClass(dict)
+          
+        case "CLLocationCoordinate2D":
+          return try initCLLocationCoordinate2D(dict)*/
+          
+        default:
+          break
       }
     }
     return nil
   }
   
-  private static func initTestClass(dict: [String: AnyObject]) throws -> TestClass {
+  /*private static func initTestClass(dict: [String: AnyObject]) throws -> TestClass {
     let args = getArgs(dict)
     if let arg1 = args["string"] as? String {
       if let arg2 = args["number"] as? Float {
@@ -49,7 +49,7 @@ public struct Initializer {
         return CLLocationCoordinate2D(latitude: arg1, longitude: arg2)
       } else { throw InitializerError.invalidArg(2) }
     } else { throw InitializerError.invalidArg(1) }
-  }
+  }*/
 }
 
 // MARK: helper functions

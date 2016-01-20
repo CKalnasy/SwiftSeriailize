@@ -74,9 +74,9 @@ public struct Serializer {
     return a as? AnyObject
   }
   
-  public static func deserialize(data: NSData) throws -> Any? {
+  public static func deserialize(jsonData: NSData) throws -> Any? {
     do {
-      if let json = try NSJSONSerialization.JSONObjectWithData(data, options: .MutableContainers) as? NSDictionary {
+      if let json = try NSJSONSerialization.JSONObjectWithData(jsonData, options: .MutableContainers) as? NSDictionary {
         return deserialize(json)
       }
     } catch {
