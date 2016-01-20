@@ -21,37 +21,15 @@ public struct Serializer {
     }
     if isList(a) {
       if let array = a as? NSArray {
-        var ret:[AnyObject] = []
-        for element in array {
-          if let obj = serializeObject(element) {
-            ret.append(obj)
-          }
-        }
-        return ret
+        return serializeArray(array)
+      } else if let array = a as? [Any] {
+        return serializeArray(array)
       } else if let map = a as? [String: Any] {
-        var ret: [String: AnyObject] = [:]
-        for (key, value) in map {
-          if let value = serializeObject(value) {
-            ret[key] = value
-          }
-        }
-        return ret
+        return serializeMap(map)
       } else if let map = a as? [String: AnyObject] { // for some reason, this doesn't match above
-        var ret: [String: AnyObject] = [:]
-        for (key, value) in map {
-          if let value = serializeObject(value) {
-            ret[key] = value
-          }
-        }
-        return ret
+        return serializeMap(map)
       } else if let set = a as? NSSet {
-        var ret: [AnyObject] = []
-        for s in set {
-          if let obj = serializeObject(s) {
-            ret.append(obj)
-          }
-        }
-        return ret
+        return serializeArray(set)
       }
     }
     
@@ -129,6 +107,59 @@ public struct Serializer {
     }
     return nil
   }
+}
+
+// MARK: private functions
+extension Serializer {
+  private static func serializeArray(array: [Any]) -> [AnyObject] {
+    var ret:[AnyObject] = []
+    for element in array {
+      if let obj = serializeObject(element) {
+        ret.append(obj)
+      }
+    }
+    return ret
+  }
+  
+  private static func serializeArray(array: NSArray) -> [AnyObject] {
+    var ret:[AnyObject] = []
+    for element in array {
+      if let obj = serializeObject(element) {
+        ret.append(obj)
+      }
+    }
+    return ret
+  }
+  
+  private static func serializeArray(array: NSSet) -> [AnyObject] {
+    var ret:[AnyObject] = []
+    for element in array {
+      if let obj = serializeObject(element) {
+        ret.append(obj)
+      }
+    }
+    return ret
+  }
+  
+  private static func serializeMap(map: [String: Any]) -> [String: AnyObject] {
+    var ret: [String: AnyObject] = [:]
+    for (key, value) in map {
+      if let value = serializeObject(value) {
+        ret[key] = value
+      }
+    }
+    return ret
+  }
+  
+  private static func serializeMap(map: [String: AnyObject]) -> [String: AnyObject] {
+    var ret: [String: AnyObject] = [:]
+    for (key, value) in map {
+      if let value = serializeObject(value) {
+        ret[key] = value
+      }
+    }
+    return ret
+  }
   
   private static func swiftClassFromString(className: NSString) -> AnyClass? {
     let appName: NSString = "ApiTests"
@@ -138,9 +169,9 @@ public struct Serializer {
   
   private static func isList(a: Any) -> Bool {
     if let _ = a as? NSArray { return true }
+    if let _ = a as? [Any] { return true }
     if let _ = a as? NSDictionary { return true }
     if let _ = a as? [String: Any] { return true }
-    if let _ = a as? [String: AnyObject] { return true }
     if let _ = a as? NSSet { return true }
     return false
   }
