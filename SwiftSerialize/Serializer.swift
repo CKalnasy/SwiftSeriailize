@@ -198,7 +198,6 @@ extension Serializer {
     if let _ = a as? UInt16 { return true }
     if let _ = a as? UInt32 { return true }
     if let _ = a as? UInt64 { return true }
-    if let _ = a as? Float80 { return true }
     if let _ = a as? Character { return true }
     return false
   }
@@ -218,7 +217,6 @@ extension Serializer {
     if let _ = a as? UInt16 { return true }
     if let _ = a as? UInt32 { return true }
     if let _ = a as? UInt64 { return true }
-    if let _ = a as? Float80 { return true }
     if let _ = a as? Character { return true }
     if let _ = a as? NSObject { return true }
     if let _ = a as? NSNull { return true }
