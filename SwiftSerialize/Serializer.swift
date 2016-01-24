@@ -17,16 +17,21 @@ public struct Serializer {
   
   private static func serializeObject(a: Any) -> AnyObject? {
     if isBaseType(a) {
+      print(a)
+      // floats need to have a decimal for some languages to recognize it as a float rather than an int
+      if isFloatingPoint(a) {
+        return Float(String(a)) // This adds a decimal and a zero
+      }
       return (a as! AnyObject)
     }
     if isList(a) {
-      if let array = a as? NSArray {
+      if let array = a as? [Any] {
         return serializeArray(array)
-      } else if let array = a as? [Any] {
+      } else if let array = a as? NSArray {
         return serializeArray(array)
       } else if let map = a as? [String: Any] {
         return serializeMap(map)
-      } else if let map = a as? [String: AnyObject] { // for some reason, this doesn't match above
+      } else if let map = a as? [String: AnyObject] { // for some reason, this doesn't always match above
         return serializeMap(map)
       } else if let set = a as? NSSet {
         return serializeArray(set)
@@ -50,6 +55,10 @@ public struct Serializer {
       return obj
     }
     return a as? AnyObject
+  }
+  
+  private static func isFloatingPoint(a: Any) -> Bool {
+    return a.dynamicType == Float.self || a.dynamicType == Double.self
   }
   
   public static func deserialize(jsonData: NSData) throws -> Any? {
@@ -161,15 +170,9 @@ extension Serializer {
     return ret
   }
   
-  private static func swiftClassFromString(className: NSString) -> AnyClass? {
-    let appName: NSString = "ApiTests"
-    let classStringName = "_TtC\(appName.length)\(appName)\(className.length)\(className)"
-    return NSClassFromString(classStringName)
-  }
-  
   private static func isList(a: Any) -> Bool {
-    if let _ = a as? NSArray { return true }
     if let _ = a as? [Any] { return true }
+    if let _ = a as? NSArray { return true }
     if let _ = a as? NSDictionary { return true }
     if let _ = a as? [String: Any] { return true }
     if let _ = a as? NSSet { return true }
@@ -217,7 +220,7 @@ extension Serializer {
     if let _ = a as? UInt16 { return true }
     if let _ = a as? UInt32 { return true }
     if let _ = a as? UInt64 { return true }
-     if let _ = a as? Character { return true }
+    if let _ = a as? Character { return true }
     if let _ = a as? NSObject { return true }
     if let _ = a as? NSNull { return true }
     if let _ = a as? NSNumber { return true }
