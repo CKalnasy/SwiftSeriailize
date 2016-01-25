@@ -17,7 +17,6 @@ public struct Serializer {
   
   private static func serializeObject(a: Any) -> AnyObject? {
     if isBaseType(a) {
-      print(a)
       // floats need to have a decimal for some languages to recognize it as a float rather than an int
       if isFloatingPoint(a) {
         return Float(String(a)) // This adds a decimal and a zero
