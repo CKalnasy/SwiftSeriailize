@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		3E0347081C4F2B1600A91B91 /* SwiftSerializeModule.h in Headers */ = {isa = PBXBuildFile; fileRef = 3E0347071C4F2B1600A91B91 /* SwiftSerializeModule.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3E08594A1C58B7DA0046494B /* SwiftSerializeModule.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E0347051C4F2B1500A91B91 /* SwiftSerializeModule.framework */; };
 		3E0C9F0E1C4F3C2300973874 /* TestClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E0C9F0D1C4F3C2300973874 /* TestClass.swift */; };
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
 		AB78BF75094BA5EE4B641A0C /* Pods_SwiftSerialize_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6CB331EE0E9CAE93A2D6BEEA /* Pods_SwiftSerialize_Tests.framework */; };
@@ -41,6 +42,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3E08594A1C58B7DA0046494B /* SwiftSerializeModule.framework in Frameworks */,
 				AB78BF75094BA5EE4B641A0C /* Pods_SwiftSerialize_Tests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

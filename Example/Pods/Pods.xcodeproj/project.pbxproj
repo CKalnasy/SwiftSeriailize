@@ -9,8 +9,6 @@
 /* Begin PBXBuildFile section */
 		2B1AC3F6CD5BB3458EC2302625367BBA /* SwiftSerialize-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = FC5AB7186A544EE3ABB6984CE5A00C60 /* SwiftSerialize-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2C99C13F854362E93EEFAF4FEEA8C312 /* swift-serialize-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 085DC287B39586ED6CF5DA08B42EF28F /* swift-serialize-dummy.m */; };
-		3E6D1CB41C58B20900BB9E0F /* SwiftSerializeModule.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E6D1CB31C58B20900BB9E0F /* SwiftSerializeModule.framework */; };
-		536A02CD39FB1F8E48E5207ECBED2051 /* Init.php in Sources */ = {isa = PBXBuildFile; fileRef = C792BAE4457B8D521E89F8567C619A79 /* Init.php */; };
 		6640540CF26ED661C11E39BDF24B33A8 /* Pods-SwiftSerialize_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 830B3794AAB7A66CAF9C0C0A7D4024C0 /* Pods-SwiftSerialize_Tests-dummy.m */; };
 		742FF0E66D018A96CEAC720A2EC7579E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA6F3CF9C1B27653099FE83AEA4BAFB1 /* Foundation.framework */; };
 		76F0153DBDE823F97FA5000868D3A06F /* SwiftSerialize-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A4869B5074845A541DA9BDE8AA45D97A /* SwiftSerialize-dummy.m */; };
@@ -69,7 +67,6 @@
 		3A76C3B5C60B32D6AC2CC84F363D0590 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = Info.plist; path = Serialize/Info.plist; sourceTree = "<group>"; };
 		3B6AB54D75303168266691F3A3F92D6D /* Pods-SwiftSerialize_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SwiftSerialize_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		3CBA18F8B6D257EBCBD73F4503D3AD5F /* SwiftSerialize.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftSerialize.xcconfig; sourceTree = "<group>"; };
-		3E6D1CB31C58B20900BB9E0F /* SwiftSerializeModule.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftSerializeModule.framework; path = "../build/Debug-iphoneos/SwiftSerializeModule.framework"; sourceTree = "<group>"; };
 		3FED89EB02C5D25E545CD54690299FCB /* swift-serialize.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "swift-serialize.xcconfig"; sourceTree = "<group>"; };
 		43D96F3A551D8492B6E54A007076FE13 /* SwiftSerialize-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftSerialize-prefix.pch"; sourceTree = "<group>"; };
 		48BDE8E41E2A59907E57A2EDE71CF90E /* Pods-SwiftSerialize_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SwiftSerialize_Tests.release.xcconfig"; sourceTree = "<group>"; };
@@ -102,7 +99,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3E6D1CB41C58B20900BB9E0F /* SwiftSerializeModule.framework in Frameworks */,
 				742FF0E66D018A96CEAC720A2EC7579E /* Foundation.framework in Frameworks */,
 				89587D3FA12A06E09D4642078277D955 /* Serialize.framework in Frameworks */,
 			);
@@ -145,7 +141,6 @@
 		1513BFAEACCBE55C7A6399D69E27F64A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				3E6D1CB31C58B20900BB9E0F /* SwiftSerializeModule.framework */,
 				0C070F4994769DEAC8633831667329D2 /* Serialize.framework */,
 				5B9C4CEB4FD5073313AF41633103EF18 /* iOS */,
 			);
@@ -386,7 +381,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0700;
-				LastUpgradeCheck = 0720;
+				LastUpgradeCheck = 0700;
 			};
 			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -448,9 +443,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				536A02CD39FB1F8E48E5207ECBED2051 /* Init.php in Sources */,
-				ABEF9B06197BB082B617F421C0F70057 /* Initializer.swift in Sources */,
 				C0CAC1B9C1070AA327E893921B1F0536 /* InitializerExtension.swift in Sources */,
+				ABEF9B06197BB082B617F421C0F70057 /* Initializer.swift in Sources */,
 				941BA9953B292C958640747100B038BC /* Serializer.swift in Sources */,
 				76F0153DBDE823F97FA5000868D3A06F /* SwiftSerialize-dummy.m in Sources */,
 			);
@@ -549,7 +543,6 @@
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = Pods_SwiftSerialize_Tests;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
@@ -578,7 +571,6 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/swift-serialize/swift-serialize.modulemap";
 				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = Serialize;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
@@ -619,7 +611,6 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
-				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -674,7 +665,6 @@
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = Pods_SwiftSerialize_Tests;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
@@ -702,7 +692,6 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/SwiftSerialize/SwiftSerialize.modulemap";
 				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = SwiftSerialize;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
@@ -731,7 +720,6 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/SwiftSerialize/SwiftSerialize.modulemap";
 				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = SwiftSerialize;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
@@ -759,7 +747,6 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/swift-serialize/swift-serialize.modulemap";
 				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = Serialize;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;

@@ -4,6 +4,7 @@
  * RUN `php SwiftSerialize/Init.php Example/Tests/apij.json` to auto generate this file
  *
  ***************************************************************************************/
+
 import Foundation
 
 extension Initializer {
