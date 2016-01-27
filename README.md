@@ -50,7 +50,7 @@ If the class is a built-in Swift class (but not a "primitive" type like Int, Str
 
 The first public initializer found in the file is the one that will be used in deserializing
 
-Then run the initializer script (/SwiftSerialize/Init.php) and pass the path of the json file as the only argument.
+Then run the initializer script (/SwiftSerialize/Init.php) and pass the path of the json file as the only argument. This json file should be at the root of your project.
 
 `php SwiftSerialize/Init.php Example/Tests/api.json`
 
@@ -74,8 +74,6 @@ pod "SwiftSerialize"
 ## Running the Example
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
-
-Run `php SwiftSerialize/Init.php Example/Tests/api.json` in the root of the project to auto generate the initializers for the test cases
 
 ## Contributing
 
