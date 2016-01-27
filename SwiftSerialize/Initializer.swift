@@ -15,6 +15,10 @@ public struct Initializer {
       } else { throw InitializerError.invalidArg(2) }
     } else { throw InitializerError.invalidArg(1) }
   }
+
+  public static func initClass(dict: [String: AnyObject]) throws -> Any? {
+    return nil
+  }
 }
 
 // MARK: private helpers
@@ -32,11 +36,5 @@ extension Initializer {
   private static func isProperty(property: String) -> Bool {
     // keys that begin with `@` are not apart of the actual object (it's metadata)
     return property.substringToIndex(property.startIndex.advancedBy(1)) != "@"
-  }
-}
-
-extension Initializer {
-  public static func initClass(dict: [String: AnyObject]) throws -> Any? {
-    return "G"
   }
 }
