@@ -6,7 +6,7 @@ enum InitializerError: ErrorType {
 }
 
 // MARK: Swift built-in type initializers
-public struct Initializer {
+internal struct Initializer {
   static func initCLLocationCoordinate2D(dict: [String: AnyObject]) throws -> CLLocationCoordinate2D {
     let args = getArgs(dict)
     if let arg1 = args["latitude"] as? CLLocationDegrees {
@@ -14,10 +14,6 @@ public struct Initializer {
         return CLLocationCoordinate2D(latitude: arg1, longitude: arg2)
       } else { throw InitializerError.invalidArg(2) }
     } else { throw InitializerError.invalidArg(1) }
-  }
-
-  public static func initClass(dict: [String: AnyObject]) throws -> Any? {
-    return nil
   }
 }
 

@@ -1,9 +1,12 @@
 <?php
 
 if (!isset($argv[1])) {
-  exit_with_error('input file not found');
+  exit_with_error('input file not specified in first arguement');
 }
-$init = new Init($argv[1], realpath('./InitializerExtension.swift'));
+if (!isset($argv[2])) {
+  exit_with_error('output file not specified in second argument');
+}
+$init = new Init($argv[1], $argv[2]);
 $init->create_init_file();
 
 class Init {
@@ -21,7 +24,6 @@ class Init {
       exit_with_error('invalid json file');
     }
     if ($this->out === false) {
-      fclose($this->out);
       exit_with_error('could not open output file ./InitializerExtension.swift');
     }
   }
@@ -30,11 +32,10 @@ class Init {
    * Can only call create_init_file() once per lifecycle
    */
   public function create_init_file() {
-    $this->print('// this file is auto-generated, do not edit it.');
+    $this->print('// this file is auto-generated, do not edit it.', 0);
     $this->add_imports();
     $this->add_initializer_extension();
     $this->add_custom_class_init_functions();
-    fclose($this->out);
   }
 
   private function add_imports() {
@@ -46,7 +47,7 @@ class Init {
 
   private function add_initializer_extension() {
     $this->print('extension Initializer {', 0);
-    $this->print('public static func initClass(dict: [String: AnyObject]) throws -> Any? {', 2);
+    $this->print('static func initClass(dict: [String: AnyObject]) throws -> Any? {', 2);
     $this->print('if let type = dict[kClassKey] as? String {', 4);
     $this->print('switch type {', 6);
     foreach ($this->json as $module => $classes) {
@@ -310,7 +311,7 @@ class Argument {
 }
 
 function exit_with_error($str) {
-  echo $str;
+  echo $str . PHP_EOL;
   exit();
 }
 
