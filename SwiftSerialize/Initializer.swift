@@ -34,3 +34,9 @@ extension Initializer {
     return property.substringToIndex(property.startIndex.advancedBy(1)) != "@"
   }
 }
+
+extension Initializer {
+  public static func initClass(dict: [String: AnyObject]) throws -> Any? {
+    return nil
+  }
+}
