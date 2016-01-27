@@ -9,6 +9,6 @@ import Foundation
 
 extension Initializer {
   static func initClass(dict: [String: AnyObject]) throws -> Any? {
-    return nil
+    return try nil
   }
 }
