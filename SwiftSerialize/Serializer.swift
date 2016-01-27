@@ -78,11 +78,11 @@ public struct Serializer {
     if isClass(a) {
       if let a = a as? [String: AnyObject] {
         if a[kClassKey] as? String != nil {
-          do {
-            return try Initializer.initClass(a)
-          } catch {
-            return nil
-          }
+//          do {
+            return Initializer.initClass(a)
+//          } catch {
+//            return nil
+//          }
         }
       }
     }
