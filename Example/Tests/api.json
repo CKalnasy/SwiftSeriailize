@@ -1,0 +1,8 @@
+{
+  "SwiftSerializeModule": {
+    "TestClass": "../SwiftSerializeModule/TestClass.swift"
+  },
+  "CoreLocation": {
+    "CLLocationCoordinate2D": ""
+  }
+}

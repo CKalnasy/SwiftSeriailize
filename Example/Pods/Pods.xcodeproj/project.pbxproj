@@ -7,20 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1CFE7184CA3AED86C60FA0271CA63E60 /* Serializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1D3C68E24D68093D594384982358B5F /* Serializer.swift */; };
-		2B1AC3F6CD5BB3458EC2302625367BBA /* SwiftSerialize-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F54EA762DB390AB7F1B30DF984EE339B /* SwiftSerialize-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2B1AC3F6CD5BB3458EC2302625367BBA /* SwiftSerialize-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = FC5AB7186A544EE3ABB6984CE5A00C60 /* SwiftSerialize-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2C99C13F854362E93EEFAF4FEEA8C312 /* swift-serialize-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 085DC287B39586ED6CF5DA08B42EF28F /* swift-serialize-dummy.m */; };
+		536A02CD39FB1F8E48E5207ECBED2051 /* Init.php in Sources */ = {isa = PBXBuildFile; fileRef = C792BAE4457B8D521E89F8567C619A79 /* Init.php */; };
 		6640540CF26ED661C11E39BDF24B33A8 /* Pods-SwiftSerialize_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 830B3794AAB7A66CAF9C0C0A7D4024C0 /* Pods-SwiftSerialize_Tests-dummy.m */; };
 		742FF0E66D018A96CEAC720A2EC7579E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA6F3CF9C1B27653099FE83AEA4BAFB1 /* Foundation.framework */; };
+		76F0153DBDE823F97FA5000868D3A06F /* SwiftSerialize-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A4869B5074845A541DA9BDE8AA45D97A /* SwiftSerialize-dummy.m */; };
 		7AA3C005E90E49FDBEDB73D048798720 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA6F3CF9C1B27653099FE83AEA4BAFB1 /* Foundation.framework */; };
 		89587D3FA12A06E09D4642078277D955 /* Serialize.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C070F4994769DEAC8633831667329D2 /* Serialize.framework */; };
 		903486B7A9F742BE3994165FCC6E3A96 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA6F3CF9C1B27653099FE83AEA4BAFB1 /* Foundation.framework */; };
-		91B68C4CD6038091416C4146FE9D92A2 /* SwiftSerialize-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 09052B44FAFC711C402897C5CC1917F4 /* SwiftSerialize-dummy.m */; };
-		9A2EACFEFFC1ABF04F1680A650758764 /* Initializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B281610C376A0CA716C442CF5507C6 /* Initializer.swift */; };
+		941BA9953B292C958640747100B038BC /* Serializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 964C4572ECE440DA6BBE5AE4A5CDB774 /* Serializer.swift */; };
+		9AC1828001C2E16CA6FF1527BCD8E0EC /* SwiftSerialize.bundle in Resources */ = {isa = PBXBuildFile; fileRef = B7AE5E7A638FE60B33A0EC184FAD084D /* SwiftSerialize.bundle */; };
 		9BEA52387DB542E0D746E8F8D1594968 /* Pods-SwiftSerialize_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6B04756DEDD8DB8A01ACFEA79735CF5D /* Pods-SwiftSerialize_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A13EC6A2CCA18B45DE624AA05C724942 /* swift-serialize-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2BC2985994F1CD83C142117B14FB2F70 /* swift-serialize-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A1C2236AB93904401A3EE51726EDE196 /* Info.plist in Sources */ = {isa = PBXBuildFile; fileRef = 3A76C3B5C60B32D6AC2CC84F363D0590 /* Info.plist */; };
+		ABEF9B06197BB082B617F421C0F70057 /* Initializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3C6C9F92E3FBE393859382BB05701D3 /* Initializer.swift */; };
 		B55C2BCB5175C783646CC352E6CD54AB /* Serialize.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A6C4C3C2183BFE563EC00B96ED8F4DB /* Serialize.swift */; };
+		C0CAC1B9C1070AA327E893921B1F0536 /* InitializerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2045539EDE42351538207D6679BE4B1 /* InitializerExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -30,6 +33,13 @@
 			proxyType = 1;
 			remoteGlobalIDString = F2FF51012B283E71FEA1131F2EB5B355;
 			remoteInfo = "swift-serialize";
+		};
+		386B86D7811CE160074CFFECC7BBA980 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 18F1703AD013F0FA363979B02F898201;
+			remoteInfo = "SwiftSerialize-SwiftSerialize";
 		};
 		3AE6721D1C80E9B50AD2EC35C383CF1B /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -48,38 +58,41 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		023D40B251B2D961773524BE7342D2DA /* SwiftSerialize.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftSerialize.xcconfig; sourceTree = "<group>"; };
-		04B281610C376A0CA716C442CF5507C6 /* Initializer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Initializer.swift; sourceTree = "<group>"; };
 		085DC287B39586ED6CF5DA08B42EF28F /* swift-serialize-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "swift-serialize-dummy.m"; sourceTree = "<group>"; };
 		088E0E150154406584F505BD0177B552 /* swift-serialize.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "swift-serialize.modulemap"; sourceTree = "<group>"; };
-		09052B44FAFC711C402897C5CC1917F4 /* SwiftSerialize-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwiftSerialize-dummy.m"; sourceTree = "<group>"; };
 		0B5B94F90C9DBFD3D2EFC0CB1E62071D /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0C070F4994769DEAC8633831667329D2 /* Serialize.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Serialize.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1B7E773AFEEA65D0E7AA1FB32219E68C /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1C3C9A0BD5E0F173C04EE932B2F91762 /* Pods-SwiftSerialize_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-SwiftSerialize_Tests.modulemap"; sourceTree = "<group>"; };
 		2BC2985994F1CD83C142117B14FB2F70 /* swift-serialize-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "swift-serialize-umbrella.h"; sourceTree = "<group>"; };
-		34B661D3CCDD8D29CC5373C40DA22FC2 /* SwiftSerialize.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = SwiftSerialize.modulemap; sourceTree = "<group>"; };
 		3A76C3B5C60B32D6AC2CC84F363D0590 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = Info.plist; path = Serialize/Info.plist; sourceTree = "<group>"; };
 		3B6AB54D75303168266691F3A3F92D6D /* Pods-SwiftSerialize_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SwiftSerialize_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		3CBA18F8B6D257EBCBD73F4503D3AD5F /* SwiftSerialize.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftSerialize.xcconfig; sourceTree = "<group>"; };
 		3FED89EB02C5D25E545CD54690299FCB /* swift-serialize.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "swift-serialize.xcconfig"; sourceTree = "<group>"; };
+		43D96F3A551D8492B6E54A007076FE13 /* SwiftSerialize-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftSerialize-prefix.pch"; sourceTree = "<group>"; };
 		48BDE8E41E2A59907E57A2EDE71CF90E /* Pods-SwiftSerialize_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SwiftSerialize_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		5A6C4C3C2183BFE563EC00B96ED8F4DB /* Serialize.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Serialize.swift; path = Serialize/Serialize.swift; sourceTree = "<group>"; };
 		62DF66BD9E73744AB65A64B4906AB824 /* swift-serialize-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "swift-serialize-prefix.pch"; sourceTree = "<group>"; };
 		63B49EA833ADD846C1904227A40EFEE1 /* SwiftSerialize.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftSerialize.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6B04756DEDD8DB8A01ACFEA79735CF5D /* Pods-SwiftSerialize_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SwiftSerialize_Tests-umbrella.h"; sourceTree = "<group>"; };
 		706153AE75B251D9F4B68D61EEA935D4 /* Pods-SwiftSerialize_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SwiftSerialize_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
-		7BF32FB7B0240F22DE2082447CEE1171 /* SwiftSerialize-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftSerialize-prefix.pch"; sourceTree = "<group>"; };
 		830B3794AAB7A66CAF9C0C0A7D4024C0 /* Pods-SwiftSerialize_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SwiftSerialize_Tests-dummy.m"; sourceTree = "<group>"; };
+		964C4572ECE440DA6BBE5AE4A5CDB774 /* Serializer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Serializer.swift; sourceTree = "<group>"; };
 		9CFB30838C7E02DA93DD3C47E6F93BD2 /* Pods-SwiftSerialize_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SwiftSerialize_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		9DF3FA5B8E829FD28C82B59D9B61B9A3 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A4869B5074845A541DA9BDE8AA45D97A /* SwiftSerialize-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwiftSerialize-dummy.m"; sourceTree = "<group>"; };
 		A56E432EAFCD7BDB863F189A06D65552 /* Serialize.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Serialize.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A85127DCE31BAAAD2BFA2A4638F3F70A /* Pods-SwiftSerialize_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SwiftSerialize_Tests-frameworks.sh"; sourceTree = "<group>"; };
+		B7AE5E7A638FE60B33A0EC184FAD084D /* SwiftSerialize.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftSerialize.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		D1D3C68E24D68093D594384982358B5F /* Serializer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Serializer.swift; sourceTree = "<group>"; };
+		C3C6C9F92E3FBE393859382BB05701D3 /* Initializer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Initializer.swift; sourceTree = "<group>"; };
+		C792BAE4457B8D521E89F8567C619A79 /* Init.php */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.php; path = Init.php; sourceTree = "<group>"; };
+		D1259BC104456F1C8839BE86D1FA7239 /* SwiftSerialize.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = SwiftSerialize.modulemap; sourceTree = "<group>"; };
 		DA6F3CF9C1B27653099FE83AEA4BAFB1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		E2045539EDE42351538207D6679BE4B1 /* InitializerExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = InitializerExtension.swift; sourceTree = "<group>"; };
 		E4930AC7F12DE3DFDA0F5AFCAD46F243 /* Pods_SwiftSerialize_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftSerialize_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F182073C2A467CE1569ED70034ABC72A /* Pods-SwiftSerialize_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SwiftSerialize_Tests-resources.sh"; sourceTree = "<group>"; };
-		F54EA762DB390AB7F1B30DF984EE339B /* SwiftSerialize-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftSerialize-umbrella.h"; sourceTree = "<group>"; };
+		F8734D537827711B3766E5B4AB6C7D59 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FC5AB7186A544EE3ABB6984CE5A00C60 /* SwiftSerialize-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftSerialize-umbrella.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +121,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		FFB35644B35D7AA512E8C99F76309BB9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -128,13 +148,18 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		46D7BC92258034C2BE52B638E18FF5A5 /* SwiftSerialize */ = {
+		54AD791ED9D044FEAEF269A9183A36B3 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				04B281610C376A0CA716C442CF5507C6 /* Initializer.swift */,
-				D1D3C68E24D68093D594384982358B5F /* Serializer.swift */,
+				F8734D537827711B3766E5B4AB6C7D59 /* Info.plist */,
+				D1259BC104456F1C8839BE86D1FA7239 /* SwiftSerialize.modulemap */,
+				3CBA18F8B6D257EBCBD73F4503D3AD5F /* SwiftSerialize.xcconfig */,
+				A4869B5074845A541DA9BDE8AA45D97A /* SwiftSerialize-dummy.m */,
+				43D96F3A551D8492B6E54A007076FE13 /* SwiftSerialize-prefix.pch */,
+				FC5AB7186A544EE3ABB6984CE5A00C60 /* SwiftSerialize-umbrella.h */,
 			);
-			path = SwiftSerialize;
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/SwiftSerialize";
 			sourceTree = "<group>";
 		};
 		558442C382E575F9538816232C769E2B /* Support Files */ = {
@@ -199,10 +224,21 @@
 			);
 			sourceTree = "<group>";
 		};
+		908A32A80498975B30F9408D3759D3D8 /* SwiftSerialize */ = {
+			isa = PBXGroup;
+			children = (
+				C792BAE4457B8D521E89F8567C619A79 /* Init.php */,
+				C3C6C9F92E3FBE393859382BB05701D3 /* Initializer.swift */,
+				E2045539EDE42351538207D6679BE4B1 /* InitializerExtension.swift */,
+				964C4572ECE440DA6BBE5AE4A5CDB774 /* Serializer.swift */,
+			);
+			path = SwiftSerialize;
+			sourceTree = "<group>";
+		};
 		BBAE3CAC6A188654890B35D3A377AF8B /* Development Pods */ = {
 			isa = PBXGroup;
 			children = (
-				DC16504BB43E2E47914B155C481788FE /* SwiftSerialize */,
+				FFC900BD448E4B80EF13D4CC70EA4AC4 /* SwiftSerialize */,
 			);
 			name = "Development Pods";
 			sourceTree = "<group>";
@@ -215,38 +251,25 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		D3CAE91C782BA12DD884AF435F602A69 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				9DF3FA5B8E829FD28C82B59D9B61B9A3 /* Info.plist */,
-				34B661D3CCDD8D29CC5373C40DA22FC2 /* SwiftSerialize.modulemap */,
-				023D40B251B2D961773524BE7342D2DA /* SwiftSerialize.xcconfig */,
-				09052B44FAFC711C402897C5CC1917F4 /* SwiftSerialize-dummy.m */,
-				7BF32FB7B0240F22DE2082447CEE1171 /* SwiftSerialize-prefix.pch */,
-				F54EA762DB390AB7F1B30DF984EE339B /* SwiftSerialize-umbrella.h */,
-			);
-			name = "Support Files";
-			path = "Example/Pods/Target Support Files/SwiftSerialize";
-			sourceTree = "<group>";
-		};
-		DC16504BB43E2E47914B155C481788FE /* SwiftSerialize */ = {
-			isa = PBXGroup;
-			children = (
-				D3CAE91C782BA12DD884AF435F602A69 /* Support Files */,
-				46D7BC92258034C2BE52B638E18FF5A5 /* SwiftSerialize */,
-			);
-			name = SwiftSerialize;
-			path = ../..;
-			sourceTree = "<group>";
-		};
 		F69E22922EE95FDB6A7E821DDA9364D0 /* Products */ = {
 			isa = PBXGroup;
 			children = (
 				E4930AC7F12DE3DFDA0F5AFCAD46F243 /* Pods_SwiftSerialize_Tests.framework */,
 				A56E432EAFCD7BDB863F189A06D65552 /* Serialize.framework */,
+				B7AE5E7A638FE60B33A0EC184FAD084D /* SwiftSerialize.bundle */,
 				63B49EA833ADD846C1904227A40EFEE1 /* SwiftSerialize.framework */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		FFC900BD448E4B80EF13D4CC70EA4AC4 /* SwiftSerialize */ = {
+			isa = PBXGroup;
+			children = (
+				54AD791ED9D044FEAEF269A9183A36B3 /* Support Files */,
+				908A32A80498975B30F9408D3759D3D8 /* SwiftSerialize */,
+			);
+			name = SwiftSerialize;
+			path = ../..;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -298,11 +321,28 @@
 			productReference = E4930AC7F12DE3DFDA0F5AFCAD46F243 /* Pods_SwiftSerialize_Tests.framework */;
 			productType = "com.apple.product-type.framework";
 		};
+		18F1703AD013F0FA363979B02F898201 /* SwiftSerialize-SwiftSerialize */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FCE3FCF9E40F0E2A67AB562D6AD90CF8 /* Build configuration list for PBXNativeTarget "SwiftSerialize-SwiftSerialize" */;
+			buildPhases = (
+				1BE959BA4160ABF1F1ED2E7532FABC0C /* Sources */,
+				FFB35644B35D7AA512E8C99F76309BB9 /* Frameworks */,
+				766D97A923DFC1EA0F470585E75756BD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "SwiftSerialize-SwiftSerialize";
+			productName = "SwiftSerialize-SwiftSerialize";
+			productReference = B7AE5E7A638FE60B33A0EC184FAD084D /* SwiftSerialize.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
 		E036A5BB61D56C490EF13299B2D05047 /* SwiftSerialize */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 797753B72E9C872E0BFCB018485E41C9 /* Build configuration list for PBXNativeTarget "SwiftSerialize" */;
 			buildPhases = (
-				898B841787A8CC8CFF6C0949E65052E0 /* Sources */,
+				DD9FE3CB0B7C15A2CD341ED4E393426D /* Sources */,
 				62945751E0447CFA045E7E65057DDC89 /* Frameworks */,
 				5D39FE0A78F3811BD0FB52BA6B645E29 /* Resources */,
 				91C777B47CB246319991D4C98D46D3C7 /* Headers */,
@@ -310,6 +350,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				1A8C07A78CADD079B8900DE3796316A2 /* PBXTargetDependency */,
 				E9F4D872450B6CFF0CC25F0B7A0C9BF0 /* PBXTargetDependency */,
 			);
 			name = SwiftSerialize;
@@ -358,6 +399,7 @@
 				0AE01EA1CBF679F295164E991B8307F7 /* Pods-SwiftSerialize_Tests */,
 				F2FF51012B283E71FEA1131F2EB5B355 /* swift-serialize */,
 				E036A5BB61D56C490EF13299B2D05047 /* SwiftSerialize */,
+				18F1703AD013F0FA363979B02F898201 /* SwiftSerialize-SwiftSerialize */,
 			);
 		};
 /* End PBXProject section */
@@ -367,12 +409,27 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9AC1828001C2E16CA6FF1527BCD8E0EC /* SwiftSerialize.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		766D97A923DFC1EA0F470585E75756BD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		1BE959BA4160ABF1F1ED2E7532FABC0C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		2FCF36487B40D0B8D76C18864E9A34D1 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -383,13 +440,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		898B841787A8CC8CFF6C0949E65052E0 /* Sources */ = {
+		DD9FE3CB0B7C15A2CD341ED4E393426D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9A2EACFEFFC1ABF04F1680A650758764 /* Initializer.swift in Sources */,
-				1CFE7184CA3AED86C60FA0271CA63E60 /* Serializer.swift in Sources */,
-				91B68C4CD6038091416C4146FE9D92A2 /* SwiftSerialize-dummy.m in Sources */,
+				536A02CD39FB1F8E48E5207ECBED2051 /* Init.php in Sources */,
+				ABEF9B06197BB082B617F421C0F70057 /* Initializer.swift in Sources */,
+				C0CAC1B9C1070AA327E893921B1F0536 /* InitializerExtension.swift in Sources */,
+				941BA9953B292C958640747100B038BC /* Serializer.swift in Sources */,
+				76F0153DBDE823F97FA5000868D3A06F /* SwiftSerialize-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -409,6 +468,12 @@
 			name = SwiftSerialize;
 			target = E036A5BB61D56C490EF13299B2D05047 /* SwiftSerialize */;
 			targetProxy = 3AE6721D1C80E9B50AD2EC35C383CF1B /* PBXContainerItemProxy */;
+		};
+		1A8C07A78CADD079B8900DE3796316A2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "SwiftSerialize-SwiftSerialize";
+			target = 18F1703AD013F0FA363979B02F898201 /* SwiftSerialize-SwiftSerialize */;
+			targetProxy = 386B86D7811CE160074CFFECC7BBA980 /* PBXContainerItemProxy */;
 		};
 		9474FBA27CCF533F4E21AEC6684D8281 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -520,6 +585,18 @@
 			};
 			name = Debug;
 		};
+		38FE96B10C20BCA07781B20502C4F022 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3CBA18F8B6D257EBCBD73F4503D3AD5F /* SwiftSerialize.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				PRODUCT_NAME = SwiftSerialize;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
 		552D02D5BA751AC2E8790D2811D496CA /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -560,6 +637,18 @@
 			};
 			name = Debug;
 		};
+		9CEAB59DD4A94CEB096B9CD1CB8F5D37 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3CBA18F8B6D257EBCBD73F4503D3AD5F /* SwiftSerialize.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				PRODUCT_NAME = SwiftSerialize;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
 		A27430A8FFE9140A11BBEEDAB1F74E64 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 48BDE8E41E2A59907E57A2EDE71CF90E /* Pods-SwiftSerialize_Tests.release.xcconfig */;
@@ -593,7 +682,7 @@
 		};
 		DB8B131482336361BF8312D9C00CA38B /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 023D40B251B2D961773524BE7342D2DA /* SwiftSerialize.xcconfig */;
+			baseConfigurationReference = 3CBA18F8B6D257EBCBD73F4503D3AD5F /* SwiftSerialize.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
@@ -622,7 +711,7 @@
 		};
 		E2C958DEE8861A7201198A961F0FE72B /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 023D40B251B2D961773524BE7342D2DA /* SwiftSerialize.xcconfig */;
+			baseConfigurationReference = 3CBA18F8B6D257EBCBD73F4503D3AD5F /* SwiftSerialize.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
@@ -711,6 +800,15 @@
 			buildConfigurations = (
 				2257D5E29EEC0C99A1C0C250035AAA63 /* Debug */,
 				A27430A8FFE9140A11BBEEDAB1F74E64 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FCE3FCF9E40F0E2A67AB562D6AD90CF8 /* Build configuration list for PBXNativeTarget "SwiftSerialize-SwiftSerialize" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				38FE96B10C20BCA07781B20502C4F022 /* Debug */,
+				9CEAB59DD4A94CEB096B9CD1CB8F5D37 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

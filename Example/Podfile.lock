@@ -1,6 +1,6 @@
 PODS:
   - swift-serialize (1.0.0)
-  - SwiftSerialize (0.1.0):
+  - SwiftSerialize (0.1.6):
     - swift-serialize (~> 1.0)
 
 DEPENDENCIES:
@@ -12,6 +12,6 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   swift-serialize: 6cc6ba441da336a218e5d5a85a81a58a877402de
-  SwiftSerialize: c691af8e8f0f6252d39d8c630afc32d98ea7c3f2
+  SwiftSerialize: 9d5011e1f7a972cb4dd8e2d4aff3c05c78e8924b
 
 COCOAPODS: 0.39.0
