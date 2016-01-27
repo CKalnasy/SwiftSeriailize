@@ -15,7 +15,6 @@ public struct Initializer {
       } else { throw InitializerError.invalidArg(2) }
     } else { throw InitializerError.invalidArg(1) }
   }
-  
 }
 
 // MARK: private helpers

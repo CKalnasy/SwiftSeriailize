@@ -30,6 +30,7 @@ class Init {
    * Can only call create_init_file() once per lifecycle
    */
   public function create_init_file() {
+    $this->print('// this file is auto-generated, do not edit it.');
     $this->add_imports();
     $this->add_initializer_extension();
     $this->add_custom_class_init_functions();
