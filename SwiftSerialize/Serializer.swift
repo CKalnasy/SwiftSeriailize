@@ -79,7 +79,7 @@ public struct Serializer {
       if let a = a as? [String: AnyObject] {
         if a[kClassKey] as? String != nil {
           do {
-            return nil//try Initializer.initClass(a)
+            return try Initializer.initClass(a)
           } catch {
             return nil
           }
