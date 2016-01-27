@@ -52,6 +52,10 @@ The first public initializer found in the file is the one that will be used in d
 
 Then run the initializer script (/SwiftSerialize/Init.php) and pass the path of the json file as the only argument. This json file should be at the root of your project.
 
+You will need to make your custom classes public. Add them to the public headers of your target in the build phases. And make sure the declare the class as public and the initializer as public.
+
+Finally add the framework that your classes live in to the SwiftSerialize library.
+
 `php SwiftSerialize/Init.php Example/Tests/api.json`
 
 ## Built-in Swift Classes
@@ -75,9 +79,11 @@ pod "SwiftSerialize"
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
+Run `php SwiftSerialize/Init.php Example/Tests/apij.json` to auto-generate the initializers for the tests.
+
 ## Contributing
 
-Will accept all valid pull requests, feature requests, and other issues. Want to help, just ask!
+Will accept all valid pull requests, feature requests, and other issues.
 
 ## License
 
