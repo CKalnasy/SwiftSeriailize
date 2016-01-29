@@ -8,14 +8,14 @@
 
 Pod::Spec.new do |s|
   s.name             = "SwiftSerialize"
-  s.version          = "0.2.2"
+  s.version          = "0.2.3"
   s.summary          = "Library to serialize and deserialze Swift objects."
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
 #   * Try to keep it short, snappy and to the point.
 #   * Write the description between the DESC delimiters below.
-#   * Finally, don't worry about the indent, CocoaPods strips it!  
+#   * Finally, don't worry about the indent, CocoaPods strips it!
   s.description      = <<-DESC
 Serialize Swift objects to JSON and unserialize them to custom classes.
                        DESC
