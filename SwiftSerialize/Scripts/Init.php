@@ -3,10 +3,8 @@
 if (!isset($argv[1])) {
   exit_with_error('input file not specified in first arguement');
 }
-if (!isset($argv[2])) {
-  exit_with_error('output file not specified in second argument');
-}
-$init = new Init($argv[1], $argv[2]);
+
+$init = new Init($argv[1], './InitializerExtension.swift');
 $init->create_init_file();
 
 class Init {
