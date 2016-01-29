@@ -1,6 +1,0 @@
-framework module Serialize {
-  umbrella header "swift-serialize-umbrella.h"
-
-  export *
-  module * { export * }
-}

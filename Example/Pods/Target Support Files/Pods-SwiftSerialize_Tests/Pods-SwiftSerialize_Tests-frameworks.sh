@@ -85,9 +85,7 @@ strip_invalid_archs() {
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "Pods-SwiftSerialize_Tests/SwiftSerialize.framework"
-  install_framework "Pods-SwiftSerialize_Tests/Serialize.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "Pods-SwiftSerialize_Tests/SwiftSerialize.framework"
-  install_framework "Pods-SwiftSerialize_Tests/Serialize.framework"
 fi

@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = "SwiftSerialize"
-  s.version          = "0.2.4"
+  s.version          = "0.2.5"
   s.summary          = "Library to serialize and deserialze Swift objects."
 
 # This description is used to generate tags and improve search results.
@@ -35,5 +35,5 @@ Serialize Swift objects to JSON and unserialize them to custom classes.
     'SwiftSerialize' => ['Pod/Assets/*.png']
   }
 
-  s.dependency 'swift-serialize', '~> 1.0'
+  # s.dependency 'swift-serialize', '~> 1.0'
 end
