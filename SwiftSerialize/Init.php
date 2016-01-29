@@ -202,10 +202,10 @@ class Init {
         $end = strpos($str, ',') ?: strpos($str, ')');
         $isOptional = false;
         if ($str[$end-1] === '?') {
-          $end--;
           $isOptional = true;
         }
-        $type = substr($str, $colon + 1, $end - $colon - 1);
+        // if the type is optional, we need to remove the `?` from the end (i.e. -$isOptional)
+        $type = substr($str, $colon + 1, $end - $colon - 1 - $isOptional);
         $ret[] = new Argument($name, $type, $isOptional);
 
         // remove last arg
