@@ -4,7 +4,7 @@ if (!isset($argv[1])) {
   exit_with_error('input file not specified in first arguement');
 }
 
-$init = new Init($argv[1], __dir__ . '/InitializerExtension.swift');
+$init = new Init($argv[1], dirname(__dir__) . '/InitializerExtension.swift');
 $init->create_init_file();
 
 class Init {
