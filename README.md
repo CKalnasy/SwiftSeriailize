@@ -50,13 +50,13 @@ If the class is a built-in Swift class (but not a "primitive" type like Int, Str
 
 The first public initializer found in the file is the one that will be used in deserializing
 
-Then run the initializer script (/SwiftSerialize/Init.php) and pass the path of the json file as the first argument and the file location of where you want the output file to be as the second argument. This json file should be at the root of your project.
+Then run the initializer script (/SwiftSerialize/Init.sh) and pass the path of the json file as the first argument. You will need to give permissions to execute Init.sh, so run `chmod 555 Init.sh` before executing the script.
 
 You will need to make your custom classes public. Add them to the public headers of your target in the build phases. And make sure the declare the class as public and the initializer as public.
 
 Finally add the framework that your classes live in to the SwiftSerialize library.
 
-`php SwiftSerialize/Init.php Example/Tests/api.json SwiftSerialize/InitializerExtension.swift`
+`./SwiftSerialize/Init.sh Example/Tests/api.json`
 
 ## Built-in Swift Classes
 
