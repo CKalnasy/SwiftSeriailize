@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = "SwiftSerialize"
-  s.version          = "0.2.9"
+  s.version          = "0.2.10"
   s.summary          = "Library to serialize and deserialze Swift objects."
 
 # This description is used to generate tags and improve search results.
