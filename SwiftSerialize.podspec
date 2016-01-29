@@ -30,11 +30,10 @@ Serialize Swift objects to JSON and unserialize them to custom classes.
   s.platform     = :ios, '8.0'
   s.requires_arc = true
 
-  s.source_files = 'SwiftSerialize/*'
+  s.source_files = 'SwiftSerialize/**/*'
   s.resource_bundles = {
     'SwiftSerialize' => ['Pod/Assets/*.png']
   }
 
-  spec.preserve_path = 'SwiftSerialize/Scripts/Init.php'
   # s.dependency 'swift-serialize', '~> 1.0'
 end
