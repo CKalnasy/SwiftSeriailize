@@ -31,6 +31,8 @@ public struct Serializer {
         return serializeMap(map)
       } else if let map = a as? [String: AnyObject] { // for some reason, this doesn't always match above
         return serializeMap(map)
+      } else if let map = a as? NSDictionary { // ditto (seriously wtf apple, Swift is not production ready)
+        return serializeMap(map)
       } else if let set = a as? NSSet {
         return serializeArray(set)
       }
@@ -156,6 +158,18 @@ extension Serializer {
     for (key, value) in map {
       if let value = serializeObject(value) {
         ret[key] = value
+      }
+    }
+    return ret
+  }
+  
+  private static func serializeMap(map: NSDictionary) -> [String: AnyObject] {
+    var ret: [String: AnyObject] = [:]
+    for (key, value) in map {
+      if let key = key as? String {
+        if let value = serializeObject(value) {
+          ret[key] = value
+        }
       }
     }
     return ret
